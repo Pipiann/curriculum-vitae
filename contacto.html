@@ -27,21 +27,22 @@
 
      <!-- <div id="bannerimagen"> </div> -->
      <div>
-      <form action="contacto.html" style="margin: 150px;" method="get"></form>
+    <form action="contacto.html" style="margin: 150px;" method="get">
       <label for="Nombre" style="margin: 15px;"><u><b><i>Nombre</label></i></b></u> 
-      <label for="choose">(Nombre Completo)</label>
-      <input id="choose" name="i_like">
-      <input type="text" name="nombre" id="nombre" class="linkNav" > 
-     <label for="Telefono" style="margin-left:  1S0px;"><u><b><i>Telefono</label></i></b></u>
-     <label for="choose">(Còdigo de àrea sin "0") </label>
-     <input id="choose" name="i_like">
-     <input type="text" name="Telefono" id="Telefono" class="linkNav"> 
+      <!-- <label for="choose">(Nombre Completo)</label> -->
+      <!-- <input id="choose" name="i_like"> -->
+      <input type="text" name="Nombre" id="Nombre" class="linkNav" onblur="validateFormContacto()"> 
+     <label for="Telefono" style="margin-left:  1S0px;"><u><b><i>Telefono (Còdigo de àrea sin "0")</label></i></b></u>
+     <!-- <label for="choose">(Còdigo de àrea sin "0") </label> -->
+     <!-- <input id="choose" name="i_like"> -->
+     <input type="text" name="Telefono" id="Telefono" class="linkNav" > 
      <label for="Mail"><u><b><i> Mail</label></i></b></u>
-       <input type="text" class="linkNav">
+       <input type="text"name="Mail" id="Mail" class="linkNav">
      <label for="Campo"><u><b><i>Campo</label></i></b></u>
        <textarea name="Campo" id="Campo"  class="linkNav" cols="30" rows="10"></textarea>
-    <button type="Submit" class="botonSubmit">Enviar</button>
-    <label for="tel" style="margin: 15px;"></label>
+    <button type="Submit" class="botonSubmit" id="botonSubmit">Enviar</button>
+    <!-- <label for="tel" style="margin: 15px;"></label> -->
+    </form>
      </div>
      <div class="container">
       <form action="contacto.html" method="get" name="contacto">

@@ -18,7 +18,7 @@ const urlParams = new URLSearchParams (valores);
 // Accedemos a los valores
 var Nombre= urlParams.get("Nombre");
 var Telefono= urlParams.get("Telefono");
-var Correo= urlParams.get("Correo");
+var Correo= urlParams.get("Mail");
 var Campo= urlParams.get("Campo");
 console.log(Nombre);
 console.log(Telefono);
@@ -26,19 +26,19 @@ console.log(Correo);
 console.log(Campo);
 
 if(Nombre != null && Telefono !=null && Correo!=null && Campo !=null){
-    alert("los campos han sido completadoa correcamente se ejecutara el codigo");
+    alert("los campos han sido completados correctamente se ejecutara el codigo");
 }else{
     alert("los campos no han sido completados correctamente")
 }
 
 function validateFormContacto() {
-    let Nombre=document.getElementById("nombre");
+    let Nombre=document.getElementById("Nombre");
     console.log(Nombre);
     console.log(Nombre.value);
-    if(Nombre.value.lengt >2){
+    if(Nombre.value.length > 2) {
       campoNombre=true;
       document.getElementById("Nombre").classList.remove("error");
-      validarFormulari();
+      validarFormulario();
     }else{
         campoNombre=false;
         document.getElementById("Nombre").classList.add("error");
@@ -48,9 +48,11 @@ function validateFormContacto() {
 function validarFormulario(){
     if(campoNombre){
         document.getElementById("botonSubmit").removeAttribute("disabled");
+        document.getElementById("botonSubmit").classList.remove("cursorDeshabilitado");
         // buscamos en el dom el boton del formulario y lo habilitamos
     }else{
         document.getElementById("botonSubmit").setAttribute("disabled","disabled");
+        document.getElementById("botonSubmit").classList.add("cursorDeshabilitado");
         // buscamos en el dom el boton del formulario y lo habilitamos
     }
 }
