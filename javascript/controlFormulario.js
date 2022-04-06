@@ -63,4 +63,13 @@ function validarCampos(){
     }
 }
 
+// // var Correo = document.getElementById("Mail");
+
+// Correo.addEventListener("Mail", function ValidarMail() {
+//   if (Mail.validity.typeMismatch) {
+//     Mail.setCustomValidity("¡Se esperaba una dirección de correo electrónico!");
+//   } else {
+//     Mail.setCustomValidity("");
+//   }
+// });
 
